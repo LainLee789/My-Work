@@ -1,0 +1,177 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Lain's Survey form</h1>
+    <p id="description">The company that will give you the best experience in gaming.</p>
+      <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+        <fieldset id="personal-informations">
+          <legend>Enter your personal informations:</legend>
+          <label for="name" id="name-label">Name and Family name:<input required type="text" id="name" placeholder="Enter here" name="Name" /></label>
+          <label for="email" id="email-label">Email:<input required type="email" id="email" placeholder="Enter here" name="e-mail" /></label>
+          <label for="number" id="number-label">Age:<input required type="number" id="number" placeholder="Enter here" name="age" min=18 max=120 /></label>
+        </fieldset>
+        
+        <fieldset id="job-information">
+          <legend>Select what job you want to take in our company:</legend>
+          <label id="Type-job" for="job">
+            <select id="dropdown">
+              <option value="">Select option</option>
+              <option value="1">Game Developer / Programmer</option>
+              <option value="2">Engine Developer</option>
+              <option value="3">Tools Programmer</option>
+              <option value="4">VR/AR Developer</option>
+              <option value="5">Game Designer</option>
+              <option value="6">UI/UX Designer</option>
+              <option value="7">Concept Artist</option>
+              <option value="8">3D Modeler / Programmer</option>
+              <option value="9">Animator</option>
+              <option value="10">VFX Artist</option>
+              <option value="11">Security</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset id="experience-level">
+          <legend>Select your level in knowledge:</legend>
+          <label for="beginner" id="beg"><input checked type="radio" id="beginner" name="level" value="beginner"/>Beginner (Doesn't know much about programming)</label>
+          <label for="advanced" id="adv"><input checked type="radio" id="advanced" name="level" value="advanced"/>Advanced (Knows basics of programming)</label>
+          <label for="master" id="mstr"><input checked type="radio" id="master" name="level" value="master"/>Master</label>
+        </fieldset>
+
+        <fieldset id="intrests">
+          <legend>Choose your intrests:</legend>
+          <label for="cybersecurity" id="intr1"><input type="checkbox" checked id="cybersecurity" name="Intr" value="cybersecurity" />Cybersecurity</label>
+          <label for="gaming" id="intr2"><input type="checkbox" checked id="gaming" name="Intr" value="gaming" />Gaming</label>
+          <label for="D-art" id="intr3"><input type="checkbox" checked id="D-art" name="Intr" value="D-art" />Digital art</label>
+          <label for="designing" id="intr4"><input type="checkbox" checked id="designing" name="Intr" value="designing"  />Designing</label>
+          <label for="code" id="intr5"><input type="checkbox" checked id="code" name="Intr" value="code" />Coding</label>
+          <label for="software enginner" id="intr6"><input type="checkbox" checked id="software enginner" name="Intr" value="software enginner" />Software engineering</label>
+        </fieldset>
+
+        <fieldset id="biography">
+          <legend>Write a short Biography about yourself:</legend>
+          <textarea id="bio" placeholder="Exemple: I'am a software engineer ..." ></textarea>
+        </fieldset>
+        <label for="terms-and-conditions">
+          <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="terms-and-conditions"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <input type="submit" id="submit" />
+      </form>
+      <iframe width="0" height="0"
+        src="https://www.youtube.com/watch?v=3x6Dk42ndGM&list=RDp79OrNgEeqE&index=6"
+        frameborder="0" allow="autoplay">
+      </iframe>
+  </body>
+  <footer>
+    <p>No-copyright</p>
+    <p>Please visit our site <a href:"https://www.freecodecamp.org" target="_blank">LainLee.org</a></p>
+  </footer>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background-image: url("https://i.pinimg.com/originals/57/b9/e5/57b9e5526b70cecc4558a284330e0c1d.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: "Nunito", "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+h1,p {
+  text-align: center;
+  padding:0;
+  font-style: italic;
+}
+
+#survey-form {
+  background-color: rgba(255,255,255,0.3);
+  width: 650px;
+  max-width: 5000px;
+  min-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px; 
+}
+
+fieldset {
+  border-width:2px;
+  border-color: hsl(240,100%,15%,0.25);
+  border-radius: 10px; 
+}
+
+fieldset:first-of-type {
+  padding-right: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px ;
+}
+
+footer{
+  padding-bottom: 30px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  height: 35px;
+  opacity: 75%;
+  border-radius: 10px; 
+  border: none;
+  padding-left: 10px;
+}
+
+#bio {
+  height: 80px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  margin:10px 0;
+  height: 50px;
+  font-size: 20px;
+  background-color: hsl(240,100%,15%,0.75);
+  color: white;
+  font-family: "Comfortaa", cursive;
+  border-radius: 10px; 
+}
+
+legend {
+  font-size: 20px;
+}
+a {
+  color: pink;
+}
+
+a:visited {
+  color: pink;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+** end of styles.css **
+
